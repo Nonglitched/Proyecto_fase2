@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros XYZ - Cotizador</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Seguros XYZ" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cotizador.html">Cotizador</a></li>
+                <li><a href="api.html">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cotizador de Seguros</h1>
+        <form id="cotizador-form">
+            <select name="tipo" id="tipo">
+                <option value="hogar">Hogar</option>
+                <option value="negocio">Negocio</option>
+            </select>
+            <input type="number" name="metros" id="metros" placeholder="Metros cuadrados">
+            <input type="text" name="ubicacion" id="ubicacion" placeholder="Ubicación">
+            <button type="submit">Cotizar</button>
+        </form>
+        <div id="resultado"></div>
+    </main>
+
+    <footer>
+        <p>Contacto: info@segurosxyz.com | Tel: (123) 456-7890</p>
+    </footer>
+
+    <script src="js/cotizador.js"></script>
+</body>
+</html>

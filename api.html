@@ -1,0 +1,41 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros XYZ - Información</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Seguros XYZ" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cotizador.html">Cotizador</a></li>
+                <li><a href="api.html">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Imagen Astronómica del Día de la NASA</h1>
+    
+    <div id="entrada-fecha">
+        <label for="fecha-apod">Selecciona una fecha:</label>
+        <input type="date" id="fecha-apod">
+        <button onclick="obtenerImagenAstronomicaDelDia()">Obtener Imagen</button>
+    </div>
+
+    <div id="contenedor-apod">
+        <h2 id="titulo-apod"></h2>
+        <img id="imagen-apod" src="" alt="Imagen Astronómica del Día">
+        <p id="explicacion-apod"></p>
+    </div>
+
+    <footer>
+        <p>Contacto: info@segurosxyz.com | Tel: (123) 456-7890</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+</body>
+</html>!
