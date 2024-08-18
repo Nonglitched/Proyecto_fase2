@@ -33,5 +33,4 @@ function mostrarImagen(url, titulo, explicacion) {
     document.getElementById('explicacion-apod').textContent = explicacion;
 }
 
-// Cargar la imagen de hoy cuando se carga la página
 window.onload = obtenerImagenAstronomicaDelDia;
